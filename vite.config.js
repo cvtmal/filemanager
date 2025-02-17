@@ -10,4 +10,12 @@ export default defineConfig({
         }),
         react(),
     ],
+    optimizeDeps: {
+        include: ['react-pdf'],
+    },
+    build: {
+        commonjsOptions: {
+            include: [/react-pdf/, /node_modules/],
+        },
+    },
 });
