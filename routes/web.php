@@ -1,10 +1,10 @@
 <?php
 
+use App\Http\Controllers\PDFController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use App\Http\Controllers\PDFController;
 
 Route::get('/', function () {
     return Inertia::render('Welcome', [

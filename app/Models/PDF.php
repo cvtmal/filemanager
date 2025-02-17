@@ -3,7 +3,6 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
 
 class PDF extends Model
 {
@@ -15,6 +14,6 @@ class PDF extends Model
 
     public function getUrlAttribute()
     {
-        return asset('storage/' . $this->path);
+        return asset('storage/'.$this->path);
     }
 }
