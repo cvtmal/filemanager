@@ -21,6 +21,7 @@ class PDFController extends Controller
 
     public function store(Request $request): RedirectResponse
     {
+        // some test comment
         $request->validate([
             'pdfs' => 'required',
         ]);
